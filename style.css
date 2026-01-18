@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #1A0B2E;
 
+
 }
 
 
@@ -12,7 +13,7 @@ body {
     padding-right: 200px;
 }
 
-
+/* Nav section */
 
 .nav-container {
 
@@ -33,6 +34,7 @@ body {
 .wave-text {
     font-weight: bolder;
     background: linear-gradient(7deg, #F7E93F, #FB09B4, #9100F8);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -49,7 +51,9 @@ body {
 
 }
 
-.nav-btn {
+.nav-btn,
+.spotify-btn,
+.subscribe-btn {
     border: none;
     color: #ffff;
     font-size: 17px;
@@ -60,4 +64,85 @@ body {
 
 
 
+
+}
+
+/* nav section */
+
+.banner-img {
+    width: 100%;
+}
+
+.circle-img {
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+
+
+}
+
+.overlay-img {
+    position: absolute;
+    z-index: 2;
+
+
+
+
+
+}
+
+.banner {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+
+}
+
+.hero {
+    position: absolute;
+    padding-top: 70px;
+
+}
+
+.banner-btn {
+
+
+    gap: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.tech-text {
+    font-size: 60px;
+    color: #ffff;
+    font-weight: bolder;
+    margin-bottom: 0%;
+}
+
+.easy-text {
+    font-size: 18px;
+    color: #ffff;
+
+}
+
+.spotify-btn {
+    display: flex;
+    gap: 9px;
+}
+
+.subscribe-btn {
+    background: transparent;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    display: flex;
+    gap: 9px;
 }
