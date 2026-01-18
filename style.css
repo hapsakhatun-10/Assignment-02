@@ -8,19 +8,17 @@ body {
 }
 
 
-.container {
-    padding-left: 200px;
-    padding-right: 200px;
-}
 
 /* Nav section */
 
 .nav-container {
-
     display: flex;
-    justify-content: space-between;
-
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-bottom: 1px solid rgb(158, 28, 178);
 
 }
 
@@ -71,6 +69,7 @@ body {
 
 .banner-img {
     width: 100%;
+
 }
 
 .circle-img {
@@ -92,13 +91,14 @@ body {
 }
 
 .banner {
-    width: 100%;
+
     margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     position: relative;
+
 
 
 }
@@ -129,9 +129,10 @@ body {
 }
 
 .easy-text {
-    font-size: 18px;
+    font-size: 16px;
     color: #ffff;
-
+    margin-top: 0%;
+    margin-bottom: 20px;
 }
 
 .spotify-btn {
@@ -145,4 +146,43 @@ body {
     color: #00FF88;
     display: flex;
     gap: 9px;
+}
+
+.info-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+
+/* .about-container, */
+.about-section {
+    margin-bottom: 50px;
+    align-items: center;
+    padding-right: 190px;
+    padding-left: 190px;
+
+}
+
+.num-container {
+    border-top: 2px solid rgb(14, 14, 15);
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+
+}
+
+
+.number {
+    font-size: 40px;
+    color: #00ff88;
+    font-weight: bolder;
+
+
+    margin-bottom: 5px;
+    padding-top: 60px;
+
 }
