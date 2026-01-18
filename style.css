@@ -3,7 +3,7 @@ body {
     padding: 0%;
     font-family: 'Roboto', sans-serif;
     background-color: #1A0B2E;
-
+    height: 5000px;
 
 }
 
@@ -185,4 +185,62 @@ body {
     margin-bottom: 5px;
     padding-top: 60px;
 
+}
+
+
+.why-choose-container {
+    padding: 200px 150px 200px 150px;
+    background-color: #230E3D;
+
+
+}
+
+.layout-text {
+    justify-items: center;
+    margin-bottom: 60px;
+}
+
+
+
+.grid-text {
+    color: #ffff;
+    font-size: 24px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-rows: 200px;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card {
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 25px;
+    background: #2b0f4a;
+
+}
+
+
+.first-layout {
+    grid-row: span 2;
+
+}
+
+.double-layout {
+    grid-column: span 2;
+
+}
+
+
+.lower-layout {
+    grid-column: span 2;
+}
+
+.featured-section {
+    padding: 200px 120px 200px 120px;
+    background-color: #00ff88;
 }
