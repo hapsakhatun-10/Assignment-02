@@ -240,7 +240,98 @@ body {
     grid-column: span 2;
 }
 
+/* featured section */
+
 .featured-section {
-    padding: 200px 120px 200px 120px;
-    background-color: #00ff88;
+    padding: 120px 200px 120px 200px;
+
+}
+
+
+.video-container {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+
+
+
+
+
+.episode-time {
+    font-size: 17px;
+    color: #00FF88;
+    padding-left: 10px;
+
+
+}
+
+.time-sec {
+
+    display: flex;
+    padding-right: 200px;
+    align-items: center;
+
+}
+
+.profile-section {
+
+    margin-top: 50px;
+    padding-bottom: 20px;
+    justify-items: center;
+
+
+
+}
+
+.host-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    height: 320px;
+
+
+    margin-top: 80px;
+
+}
+
+.host-img {
+
+    height: 330px;
+    width: 330px;
+
+}
+
+
+
+.host-info {
+    margin-top: 0%;
+    align-items: center;
+    padding-right: 400px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+
+
+
+}
+
+.icon-div {
+    display: flex;
+
+    align-items: center;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.icon {
+
+    padding: 8px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid white;
 }
