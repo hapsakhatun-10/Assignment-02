@@ -3,22 +3,21 @@ body {
     padding: 0%;
     font-family: 'Roboto', sans-serif;
     background-color: #1A0B2E;
-    height: 5000px;
-
 }
 
 
 
 /* Nav section */
 
+
 .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-    border-bottom: 1px solid rgb(158, 28, 178);
+    padding: 24px 200px;
+    border-bottom: 1px solid rgba(158, 28, 178, 0.3);
+    margin: 0;
 
 }
 
@@ -26,7 +25,7 @@ body {
     font-weight: bolder;
     font-size: 40px;
     color: #ffff;
-    border: 1px solid black;
+    margin: 0;
 }
 
 .wave-text {
@@ -36,8 +35,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-
-
 }
 
 .nav-text {
@@ -45,7 +42,6 @@ body {
     display: flex;
     gap: 90px;
     color: #ffff;
-
 
 }
 
@@ -72,6 +68,12 @@ body {
 
 }
 
+.circle-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .circle-img {
     position: relative;
     object-fit: cover;
@@ -83,29 +85,25 @@ body {
 .overlay-img {
     position: absolute;
     z-index: 2;
-
-
-
-
-
 }
 
 .banner {
-
-    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     position: relative;
-
-
-
 }
 
 .hero {
-    position: absolute;
-    padding-top: 70px;
+    background-image: url(assets/hero-bg.png);
+    background-size: contain;
+    background-repeat: repeat no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 120px 0;
+    /* position: absolute; */
+    /* padding-top: 70px; */
 
 }
 
@@ -123,14 +121,14 @@ body {
 
 .tech-text {
     font-size: 60px;
-    color: #ffff;
+    color: #fff;
     font-weight: bolder;
     margin-bottom: 0%;
 }
 
 .easy-text {
     font-size: 16px;
-    color: #ffff;
+    color: rgba(255, 255, 255, 0.6);
     margin-top: 0%;
     margin-bottom: 20px;
 }
@@ -166,7 +164,7 @@ body {
 }
 
 .num-container {
-    border-top: 2px solid rgb(14, 14, 15);
+    border-top: 2px solid rgba(255, 255, 255, 0.18);
 
     display: flex;
     justify-content: space-evenly;
@@ -203,8 +201,9 @@ body {
 
 
 .grid-text {
-    color: #ffff;
+    color: #fff;
     font-size: 24px;
+    font-weight: 700;
 }
 
 .grid-container {
@@ -224,7 +223,6 @@ body {
 
 }
 
-
 .first-layout {
     grid-row: span 2;
 
@@ -234,7 +232,6 @@ body {
     grid-column: span 2;
 
 }
-
 
 .lower-layout {
     grid-column: span 2;
@@ -251,14 +248,25 @@ body {
 .video-container {
     display: flex;
     flex-direction: row;
-
-
+    gap: 32px;
 }
 
+.video-title {
+    padding: 24px;
+    border-radius: 0px 0px 16px 16px;
+    background-color: #250D44;
+}
 
+.video-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 16px 16px 0 0;
+}
 
-
-
+.featured-title {
+    text-align: center;
+    margin-bottom: 48px;
+}
 
 .episode-time {
     font-size: 17px;
@@ -282,50 +290,40 @@ body {
     padding-bottom: 20px;
     justify-items: center;
 
-
-
 }
 
 .host-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
-    height: 320px;
+    gap: 24px;
 
-
+    background-color: #250D44;
+    padding: 40px;
     margin-top: 80px;
+    border-radius: 16px;
 
 }
 
 .host-img {
-
-    height: 330px;
-    width: 330px;
-
+    height: 220px;
+    width: 220px;
 }
 
-
+.host-text {
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    margin: 0 0 16px 0;
+}
 
 .host-info {
-    margin-top: 0%;
     align-items: center;
-    padding-right: 400px;
-    padding-left: 40px;
-    padding-bottom: 50px;
-
-
-
 }
 
 .icon-div {
     display: flex;
-
-    align-items: center;
-    align-items: center;
-    gap: 20px;
-
-
+    gap: 8px;
 }
 
 .icon {
@@ -333,5 +331,54 @@ body {
     padding: 8px;
     border-radius: 50%;
     background: transparent;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 16px;
+    height: 16px;
+}
+
+.footer-container {
+
+    position: relative;
+    justify-items: center;
+
+
+    background-image: url(assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+
+}
+
+.footer-items {
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0;
+
+
+}
+
+.footer-icon {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+}
+
+.footer-img {
+    padding-bottom: 20px;
+    padding-right: 15px;
+}
+
+.icon-name {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-right: 20px;
+    margin-top: 0%;
+
+
 }
