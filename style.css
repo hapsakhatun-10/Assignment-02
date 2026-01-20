@@ -15,7 +15,7 @@ body {
 
 .subscribe-btn:hover {
     background-color: rgba(0, 255, 136, 0.2);
-    color: black;
+
 
 }
 
@@ -641,5 +641,8 @@ body {
         gap: 15px;
     }
 
+    .footer-name-text {
+        text-align: center;
+    }
 
 }
