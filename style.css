@@ -462,14 +462,16 @@ body {
 }
 
 .footer-icon {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
     padding: 15px;
+
 }
 
 .footer-img {
     padding-bottom: 20px;
-    padding-right: 15px;
+    padding-right: 10px;
 }
 
 .icon-name {
@@ -643,6 +645,11 @@ body {
 
     .footer-name-text {
         text-align: center;
+    }
+
+    .footer-icon {
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
 }
