@@ -5,6 +5,31 @@ body {
     background-color: #1A0B2E;
 }
 
+/* hover-btn-section */
+.spotify-btn:hover,
+.nav-btn:hover {
+    background-position: 100% 0;
+    color: black;
+    font-weight: 700;
+}
+
+.subscribe-btn:hover {
+    background-color: rgba(0, 255, 136, 0.2);
+    color: black;
+
+}
+
+/* grid-box-hover */
+.first-layout:hover,
+.double-layout:hover,
+.lower-layout:hover,
+.single-layout:hover {
+    background-color: #1A0B2E;
+}
+
+
+
+
 
 
 /* Nav section */
@@ -45,20 +70,21 @@ body {
 
 }
 
+
 .nav-btn,
 .spotify-btn,
 .subscribe-btn {
+    font-weight: 600;
     border: none;
     color: #ffff;
     font-size: 17px;
     padding: 12px 28px;
     border-radius: 22px;
-    background: linear-gradient(35deg,
-            #F7E93F, #FB09B4, #9100F8);
+    background: linear-gradient(35deg, #F7E93F, #FB09B4, #FB09B4, #9100F8);
 
+    background-size: 300% 100%;
 
-
-
+    transition: background-position 0.5s ease-in-out;
 }
 
 /* nav section */
@@ -162,6 +188,7 @@ body {
     color: #00FF88;
     display: flex;
     gap: 9px;
+    transition: all 300ms ease;
 }
 
 .menu-btn {
@@ -184,6 +211,11 @@ body {
     padding-right: 190px;
     padding-left: 190px;
 
+}
+
+.about-container {
+    max-width: 720px;
+    margin: auto;
 }
 
 .num-container {
@@ -210,6 +242,7 @@ body {
 
 }
 
+/* why-choose-section */
 
 .why-choose-container {
     padding: 200px 150px 200px 150px;
@@ -227,8 +260,9 @@ body {
 
 .grid-text {
     color: #fff;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
+
 }
 
 .grid-container {
@@ -277,7 +311,7 @@ body {
 }
 
 .video-title {
-    padding: 24px;
+    padding: 32px;
     border-radius: 0px 0px 16px 16px;
     background-color: #250D44;
 }
@@ -287,6 +321,8 @@ body {
     height: 220px;
     border-radius: 16px 16px 0 0;
 }
+
+
 
 .featured-title {
     text-align: center;
@@ -360,6 +396,11 @@ body {
     height: 16px;
 }
 
+
+
+
+/* footer */
+
 .footer-container {
 
     position: relative;
@@ -413,6 +454,7 @@ body {
 
 @media(max-width:576px) {
 
+    /* nav-sec */
     .nav-container {
         padding: 24px 30px;
     }
@@ -431,6 +473,7 @@ body {
         height: 80px;
     }
 
+    /* hero/banner-section */
     .hero {
         padding: 0px 0;
     }
@@ -450,6 +493,8 @@ body {
         padding-right: 40px;
 
     }
+
+    /* grid-box-section */
 
     .num-container {
 
@@ -479,6 +524,8 @@ body {
         font-size: 32px;
     }
 
+    /* video-item */
+
     .video-container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -486,6 +533,8 @@ body {
     .featured-section {
         padding: 40px;
     }
+
+    /* host-profile */
 
     .host-container {
         flex-direction: column;
@@ -495,6 +544,8 @@ body {
     .icon-div {
         justify-content: center;
     }
+
+    /* footer-section */
 
     .footer-icon {
         flex-wrap: wrap;
@@ -516,6 +567,9 @@ body {
         font-size: 64px;
     }
 
+
+    /* menu-btn */
+
     .nav-text,
     .nav-btn {
         display: none;
@@ -532,19 +586,25 @@ body {
 
     }
 
+    /* other-btn */
+
     .spotify-btn {
         font-size: 16px;
-        padding: 10px 12px;
+        padding: 10px 10px;
 
     }
 
     .subscribe-btn {
-        padding: 10px 12px;
+        padding: 10px 10px;
     }
 
     .banner-btn {
-        padding: 0 40px;
+        padding: 0 30px;
 
+    }
+
+    .banner-btn {
+        gap: 15px;
     }
 
 
