@@ -164,6 +164,10 @@ body {
     gap: 9px;
 }
 
+.menu-btn {
+    display: none;
+}
+
 .info-text {
     display: flex;
     align-items: center;
@@ -456,7 +460,7 @@ body {
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, auto);
-        padding: 0 40px;
+        padding: 0 0px;
 
     }
 
@@ -510,6 +514,18 @@ body {
 
     .footer-name-text {
         font-size: 64px;
+    }
+
+    .nav-text,
+    .nav-btn {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        background: transparent;
+        border: none;
+
     }
 
 
